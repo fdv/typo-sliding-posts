@@ -1,4 +1,4 @@
-source = File.join(RAILS_ROOT, '/vendor/plugins/typo_sliding_posts/')
+source = File.join(RAILS_ROOT, '/vendor/plugins/typo-sliding-posts/')
 destination = File.join(RAILS_ROOT, '/public/')
 
 puts "Copying Typo sliding posts files"
