@@ -4,11 +4,13 @@ module TypoSlidingPosts
 end
   
 module TypoSlidingPostsHelper
-  def render_carousel(articles)
+  def render_sliding_posts(articles)
     i = 0
-    carousel = '<div id="carousel">'
-    carousel << '<a href="#" class="carousel-control" id="carousel-previous" rel="prev"><img src="/images/theme/fleche1.png" alt="Article précédent" /></a>'
-    carousel << '<a href="#" class="carousel-control" id="carousel-next" rel="next"><img src="/images/theme/fleche2.png" alt="Article suivant" /></a>'
+    carousel = stylesheet_link_tag('typo_sliding_posts')
+    carousel << javascript_include_tag('carousel')
+    carousel << '<div id="carousel">'
+    carousel << '<a href="#" class="carousel-control" id="carousel-previous" rel="prev"><img src="/images/carousel_previous.png" alt="Article précédent" /></a>'
+    carousel << '<a href="#" class="carousel-control" id="carousel-next" rel="next"><img src="/images/carousel_next.png" alt="Article suivant" /></a>'
     carousel << '<div id="carousel-wrapper">'
     carousel << '<div id="carousel-content">'
     articles.each do |article|
