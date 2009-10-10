@@ -1,0 +1,14 @@
+Typo Sliding Posts
+==================
+
+This plugin is – obviously – a carousel for Typo, the famous Ruby on Rails blogging system avaliable at http://typosphere.org 
+
+Typo carousel displays featured posts at the topcontent on your blog homepage grabbing pictures from the post.
+
+Example
+=======
+
+Installing Typo Sliding Posts is pretty easy
+
+
+Copyright (c) 2009 Frédéric de Villamil, released under the MIT license
