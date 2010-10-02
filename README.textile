@@ -1,30 +1,33 @@
-Typo Sliding Posts
-==================
+h1. Typo Sliding Posts
 
-This plugin is – obviously – a carousel for Typo, the famous Ruby on Rails blogging system avaliable at http://typosphere.org 
+This plugin is – obviously – a carousel for Typo, the famous Ruby on Rails blogging system avaliable at http://typosphere.org
 
 Typo carousel displays featured posts at the topcontent on your blog homepage grabbing pictures from the post.
 
-Install Typo Sliding Posts
-==========================
+h2. Installing Typo Sliding Posts
 
 To use Typo Sliding Posts, you'll need to download and install Hpricot. Hpricot is a cool HTML parsing library. Install the gem if you don't have it yet.
 
 Installing Typo Sliding Posts is pretty easy :
 
+<pre>
 ./script/plugins install git://github.com/fdv/typo-sliding-posts.git
+</pre>
 
 Then, edit your template, and add this to your articles index view (should be views/articles/index.html.erb) and add the following:
 
+<pre>
 <%= render_sliding_posts(@articles) %>
+</pre>
 
 You're done!
 
 Now, everytime you want to display some featured content on your blog, just add a picture into your post, using the 'carousel' class:
 
+<pre>
 <img src='/some/path.jpg' class='carousel' alt='my cool picture' />
+</pre>
 
 Typo Sliding Posts will take care of everything else.
-
 
 Copyright (c) 2009 Frédéric de Villamil, released under the MIT license
